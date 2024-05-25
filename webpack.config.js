@@ -21,6 +21,16 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'fonts/',
+                    },
+                },
+            }
         ],
     },
     plugins: [

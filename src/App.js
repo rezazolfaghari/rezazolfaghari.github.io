@@ -47,8 +47,8 @@ const App = () => {
     }
     return (
         <>
-            <div className="container mx-auto p-4">
-                <h1 className="text-4xl font-bold text-center my-4">Blog Posts</h1>
+            <div className="font-vazir max-w-[900px] container mx-auto p-4">
+                <h1 className="text-4xl font-bold text-center my-4">ریلاگ</h1>
                 <div className="grid grid-cols-1 gap-4">
                     {posts.map((post) => (
                         <Post key={post.id} post={post}/>
